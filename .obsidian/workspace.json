@@ -1,0 +1,231 @@
+{
+  "main": {
+    "id": "bf28ab66fdd09717",
+    "type": "split",
+    "children": [
+      {
+        "id": "36f36fe48a77d813",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b5b74fa7fc05ae6e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CAN Protocol analysis.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CAN Protocol analysis"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1c7d0ce92b0b35ec",
+    "type": "split",
+    "children": [
+      {
+        "id": "80d76c6f9e2e4a83",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ccfd620ca5d8d1d4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "25d481ca14a32833",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "72d0d0789b40f18b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "b8b2b0d3bf4c353e",
+    "type": "split",
+    "children": [
+      {
+        "id": "bed37afba81a3c8c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2e16fd40b5101c95",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "a98bbbb678e0dc80",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CAN Protocol analysis.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from CAN Protocol analysis"
+            }
+          },
+          {
+            "id": "9d77ca27a028ce56",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "1a856d296af750e5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CAN Protocol analysis.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of CAN Protocol analysis"
+            }
+          },
+          {
+            "id": "cc8fb332cedbe066",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "b5b74fa7fc05ae6e",
+  "lastOpenFiles": [
+    "Embeded networking/IOT protocols.md",
+    "CAN Protocol analysis.md",
+    "LoRaWAN.md",
+    "Short note.md",
+    "🧪 MQTT with ESP32 – Lab Project.md",
+    "ESP32.md",
+    "LoRa - Speech.md",
+    "Embeded networking/Short note.md",
+    "IOT - Kuppi - Note 1.md",
+    "Embeded application/Menti Questions.md",
+    "IOT/Short note.md",
+    "IOT",
+    "Pasted image 20250518205136.png",
+    "Linear Algebra/Short note - (Linear algebra).md",
+    "C.md",
+    "Pasted image 20250518151919.png",
+    "Rec.md",
+    "Linear Algebra/Eigen-short note.md",
+    "Pasted image 20250517213027.png",
+    "Quiz 12 220199L.md",
+    "Pasted image 20250517213034.png",
+    "Theory of Computing/Simplification.md",
+    "Theory of Computing/Short note - (TOC).md",
+    "Theory of Computing/Context free languages questions.md",
+    "Assignment 2.md",
+    "CCNA.md",
+    "Quiz 12 - 220199L.md",
+    "Pasted image 20250510212330.png",
+    "Pasted image 20250510212317.png",
+    "Pasted image 20250510212300.png",
+    "Pasted image 20250505194008.png",
+    "Pasted image 20250505193548.png",
+    "Pasted image 20250505193539.png",
+    "Linear Algebra",
+    "Excalidraw/Drawing 2025-05-01 11.27.13.excalidraw.md",
+    "Robotics/ShortNote.md",
+    "Robotics",
+    "Excalidraw/Drawing 2025-05-01 10.29.06.excalidraw.md",
+    "RIP - by 220199L, M.H.S. Gunathilaka.md",
+    "Embeded networking",
+    "SE",
+    "Theory of Computing",
+    "Untitled.canvas",
+    "Excalidraw",
+    "Embeded application"
+  ]
+}
