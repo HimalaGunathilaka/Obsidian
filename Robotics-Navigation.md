@@ -21,7 +21,10 @@ __Sensor__ --> Automata --> __Motor__
 - The analysis of map is the __planning phase__ of robotic path planning.
 - The __query phase__ uses the result of the planning phase to find a path from A to B.
 - Distance transform and D∗, require a signiﬁcantamount of computation for the planning phase, but the query phase is very cheap.However the plan depends on the goal. If the goal changes the expensive planning phase must be re-executed. Even though D∗ allows the path to be recomputed as the costmap changes it does not support a changing goal.
+- The roadmap need only be computed once and can then be used like the train network to get us from any start location to any goal location.
 ### Probabilistic Roadmap Method (PRM)
-- 
+- The high computational cost of the distance transform and skeletonization methods makes them infeasible for large maps and has led to the development of probabilistic methods. These methods sparsely sample the world map.
+- The planning phase ﬁnds N random points, that lie in free space. Each point is connected to its nearest neighbors by a straight line path that does not cross any obstacles, so as to create a network, or graph, with a minimal number of disjoint components and no cycles.
 ### Lattice Planner
+- 
 ### Rapidly Exploring Random Tree (RRT)
