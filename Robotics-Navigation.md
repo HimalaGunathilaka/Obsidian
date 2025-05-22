@@ -13,9 +13,15 @@ __Sensor__ --> Automata --> __Motor__
 - ```A goal oriented machine that can sense, plan and act.```
 - A popular algorithm for robot path planning is D* (Dynamic A*).
 - __Distance transform__ - Consider a matrix of zeros with just a single element representing the goal. The distance transform of this matrix is another matrix, of the same size but the value of each element is its distance from the original non zero  pixel.
+	- Each **free cell** in a grid is assigned a value representing its **distance to the nearest obstacle**. 
+	- Obstacles are typically marked with a value of **0**, and free cells get increasing values depending on how far they are from obstacles.
+	- **The Distance Transform itself doesn't give a path directly from A to B.**  
+		Instead, it **reshapes the map** into a gradient field (like a heatmap), and you then **extract the path** by **following the gradient** — usually moving from the start (A) **toward the goal (B)** using the steepest descent or ascent, depending on how the DT is computed.
 ### Road-mapping
-- The analysis of map is the planning phase of robotic path planning.
+- The analysis of map is the __planning phase__ of robotic path planning.
+- The __query phase__ uses the result of the planning phase to find a path from A to B.
+- Distance transform and D∗, require a signiﬁcantamount of computation for the planning phase, but the query phase is very cheap.However the plan depends on the goal. If the goal changes the expensive planning phase must be re-executed. Even though D∗ allows the path to be recomputed as the costmap changes it does not support a changing goal.
 ### Probabilistic Roadmap Method (PRM)
-
+- 
 ### Lattice Planner
 ### Rapidly Exploring Random Tree (RRT)
