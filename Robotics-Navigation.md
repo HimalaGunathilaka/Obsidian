@@ -19,8 +19,9 @@
 - Planning is done before movement based on known or assumed map data.
 
 ### D* (Dynamic A*)
-- A dynamic version of A* used for efficient replanning when the environment changes.
+- A dynamic version of A* used for efficient repl-anning when the environment changes.
 - Suitable for unknown or partially known environments.
+- D* searches from goal to start because the area near the goal is less likely to change, while the area near the robot (start) may reveal new obstacles. By planning backward, the robot can update its path more efficiently when it encounters changes in the environment.
 
 ### Distance Transform
 - Converts a map with the goal marked to a **gradient field** representing distances to that goal.
