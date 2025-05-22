@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "36f36fe48a77d813",
+        "id": "12d9e0eb418f8633",
         "type": "tabs",
         "children": [
           {
-            "id": "b5b74fa7fc05ae6e",
+            "id": "860e6158eed29e4a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CAN Protocol analysis.md",
+                "file": "Robotics-Navigation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CAN Protocol analysis"
+              "title": "Robotics-Navigation"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "b8b2b0d3bf4c353e",
@@ -180,10 +181,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b5b74fa7fc05ae6e",
+  "active": "860e6158eed29e4a",
   "lastOpenFiles": [
-    "Embeded networking/IOT protocols.md",
+    "Robotics/ShortNote.md",
+    "Robotics-Navigation.md",
     "CAN Protocol analysis.md",
+    "Embeded networking/IOT protocols.md",
     "LoRaWAN.md",
     "Short note.md",
     "🧪 MQTT with ESP32 – Lab Project.md",
@@ -217,10 +220,8 @@
     "Pasted image 20250505193539.png",
     "Linear Algebra",
     "Excalidraw/Drawing 2025-05-01 11.27.13.excalidraw.md",
-    "Robotics/ShortNote.md",
     "Robotics",
     "Excalidraw/Drawing 2025-05-01 10.29.06.excalidraw.md",
-    "RIP - by 220199L, M.H.S. Gunathilaka.md",
     "Embeded networking",
     "SE",
     "Theory of Computing",

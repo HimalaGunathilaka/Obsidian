@@ -6,7 +6,7 @@
 
 ## 🧰 Stuff Needed
 - 2x Arduino UNO or Nano
-- 2x MCP2515 CAN Bus modules with TJA1050 transceiver
+- 2x MCP2515 CAN Bus modules with TJA1050 transceiver.
 - Jumper wires
 - Common GND between devices
 
