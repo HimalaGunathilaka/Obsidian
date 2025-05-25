@@ -68,12 +68,21 @@
 
 ### 📍 Key Differences: RRT vs PRM
 
-| Feature              | **RRT (Rapidly-exploring Random Tree)** | **PRM (Probabilistic Roadmap)**         |
-|----------------------|------------------------------------------|------------------------------------------|
-| **Build Style**      | Incremental tree from start              | Graph of sampled points                  |
-| **When Built**       | During query time (online)               | Before query (offline)                   |
-| **Use Case**         | Single-query (real-time navigation)      | Multi-query (reusable maps)              |
-| **Structure**        | Tree (directed, rooted at start)         | Graph (undirected, multiple components)  |
-| **Goal Biasing**     | Often biases sampling toward the goal    | Not typical in standard PRM              |
-| **Path Refinement**  | Optional (e.g., RRT*)                    | Yes (e.g., shortest path algorithms)     |
+| Feature             | **RRT (Rapidly-exploring Random Tree)** | **PRM (Probabilistic Roadmap)**         |
+| ------------------- | --------------------------------------- | --------------------------------------- |
+| **Build Style**     | Incremental tree from start             | Graph of sampled points                 |
+| **When Built**      | During query time (online)              | Before query (offline)                  |
+| **Use Case**        | Single-query (real-time navigation)     | Multi-query (reusable maps)             |
+| **Structure**       | Tree (directed, rooted at start)        | Graph (undirected, multiple components) |
+| **Goal Biasing**    | Often biases sampling toward the goal   | Not typical in standard PRM             |
+| **Path Refinement** | Optional (e.g., RRT*)                   | Yes (e.g., shortest path algorithms)    |
+|                     |                                         |                                         |
 
+- **query phase** is the phase **where the actual path is formed** between a specific **start and goal**.
+In robotic path planning the analysis of the map is referred to as the planning phase.
+The query phase uses the result of the planning phase to ﬁnd a path from A to B. The
+two previous planning algorithms, distance transform and D∗, require a signiﬁcant
+amount of computation for the planning phase, but the query phase is very cheap.
+However the plan depends on the goal. If the goal changes the expensive planning
+phase must be re-executed. Even though D∗ allows the path to be recomputed as the
+costmap changes it does not support a changing goal.

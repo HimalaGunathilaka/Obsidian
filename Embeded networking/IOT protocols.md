@@ -204,7 +204,7 @@ This note summarizes key protocols discussed in the context of IoT, LPWANs, and 
 ---
 
 ## 🧩 See Also
-- [[LoRaWAN]]
+- [[LoRaWAN with  LoRa Ra-02 SX1278 Module]]
 - [[NB-IoT]]
 - [[Thread Protocol]]
 - [[Wireless Protocol Selection for IoT]]
