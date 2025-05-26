@@ -10,3 +10,10 @@
 ![[Pasted image 20250518205136.png]]
 - CPU pause -> Means the runned instructions retains and will start again when depaused.  
 - ESP.deepsleep(5e6) -> $5 * 10^6$ milliseconds, (0 will be sleeping forever.)
+---
+## Modbus
+- __Open protocol__ - 
+- Oldest SCADA
+- TCP/IP connection
+- serial port and ethernet
+- 

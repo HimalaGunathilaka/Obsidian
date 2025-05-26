@@ -1,7 +1,11 @@
 ## 📘 Overview
 - **CAN** is a robust vehicle bus standard designed to allow microcontrollers and devices to communicate with each other in applications without a host computer.
-- Commonly used in automotive and industrial systems.
+- Think of it as the neural network which connects the Electronic Control Units (ECU).
+![[Pasted image 20250526201353.png]]
 
+- Commonly used in automotive and industrial systems.
+- CAN use twisted pair of wires (CAN low and CAN high) to transmission. Electromagnetic interference affects the signal in both wires uniformly, thereby minimizing errors.
+- 
 ---
 
 ## 🧰 Stuff Needed
@@ -96,8 +100,12 @@ void loop() {
 ```
 
 
+>Following is CAN high and low line
+![[Pasted image 20250525222120.png]]
+
+>MCP2515
+![[Pasted image 20250525222130.png]]
+
+![[Pasted image 20250525222147.png]]
 
 ![[Pasted image 20250525222108.png]]
-![[Pasted image 20250525222120.png]]
-![[Pasted image 20250525222130.png]]
-![[Pasted image 20250525222147.png]]
