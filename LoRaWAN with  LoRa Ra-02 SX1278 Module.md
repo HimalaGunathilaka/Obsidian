@@ -17,19 +17,41 @@
 - Supports **bi-directional communication**, **adaptive data rates**, and **end-to-end encryption**.
 
 ---
-
-### 📦 Architecture
-
-```text
-+------------+       +-----------+       +-----------------+
-|   End Node | <---> |  Gateway  | <---> |  Network Server |
-+------------+       +-----------+       +-----------------+
-                                      ↕
-                              +----------------+
-                              | Application Srv |
-                              +----------------+
-```
-
+### Packet structure
+![[Pasted image 20250526215015.png]]
+- **Preamble**
+    - **Purpose**: Helps the receiver detect the beginning of a packet.
+    - **Details**: A sequence of up-chirps that allows the receiver’s automatic gain control (AGC) to settle and synchronize with the incoming signal.
+    - **Configurable Length**: Default is usually 8 symbols, but it can vary based on configuration.
+    
+- **Sync Word**
+    - **Purpose**: Differentiates LoRaWAN packets from other LoRa-based systems.
+    - **Details**: A special sequence following the preamble; LoRaWAN uses specific sync words (typically `0x34` for public networks).
+    - **Function**: Allows receivers to filter out irrelevant packets.
+    
+- **Down-Chirp** (a.k.a. Start Frame Delimiter)
+    - **Purpose**: Marks the transition from preamble to the actual packet data.
+    - **Details**: A single down-chirp (frequency sweep downwards) that signals the end of the preamble and enables precise timing synchronization.
+- **Header**
+    - **Purpose**: Provides information about the payload and transmission settings.
+    - **Details**:
+        - May include payload length, coding rate, and CRC presence.
+        - In **explicit mode**, the header is included.
+        - In **implicit mode**, the header is omitted to save airtime (both ends must be pre-configured).
+    
+- **Payload**
+    - **Purpose**: The actual data being transmitted.
+    - **Details**:
+        - Contains the MAC header (MHDR), MAC payload (which includes Frame Header (FHDR), Frame Port, and FRMPayload), and MIC (message integrity code).
+        - Encrypted using AES encryption for confidentiality and integrity.
+    
+- **CRC (Cyclic Redundancy Check)**
+    - **Purpose**: Ensures data integrity.
+    - **Details**:
+        - Optional in the header (based on mode).
+        - Always included in the physical layer trailer to verify correct packet reception.
+        - Used to detect errors in transmission.
+    
 ---
 ## Lab
 - Stuff need : 

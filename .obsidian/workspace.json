@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CAN Protocol analysis.md",
+                "file": "LoRaWAN with  LoRa Ra-02 SX1278 Module.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CAN Protocol analysis"
+              "title": "LoRaWAN with  LoRa Ra-02 SX1278 Module"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "b8b2b0d3bf4c353e",
@@ -184,26 +183,27 @@
   },
   "active": "860e6158eed29e4a",
   "lastOpenFiles": [
-    "Pasted image 20250526201353.png",
-    "IOT/Short note.md",
+    "Pasted image 20250526215015.png",
     "🧪 MQTT with ESP32 – Lab Project.md",
-    "Circuits/Pasted image 20250518205136.png",
+    "Vault/Pasted image 20250523193824.png",
+    "Vault",
     "CAN Protocol analysis.md",
-    "Pasted image 20250525222147.png",
-    "Pasted image 20250525222130.png",
-    "Pasted image 20250525222120.png",
-    "Pasted image 20250525222108.png",
+    "Vault/Pasted image 20250526211342.png",
+    "Vault/Pasted image 20250526210833.png",
+    "Vault/Pasted image 20250526201353.png",
+    "IOT/Short note.md",
+    "Circuits/Pasted image 20250518205136.png",
+    "Vault/Pasted image 20250525222147.png",
+    "Vault/Pasted image 20250525222130.png",
+    "Vault/Pasted image 20250525222120.png",
+    "Vault/Pasted image 20250525222108.png",
     "C.md",
     "Circuits/ESP32.md",
     "Untitled.md",
-    "Pasted image 20250525181943.png",
-    "Pasted image 20250525181135.png",
+    "Vault/Pasted image 20250525181943.png",
     "Embeded networking/IOT protocols.md",
     "Embeded networking/Short note.md",
-    "Embeded networking/Pasted image 20250501114056.png",
-    "Embeded networking/Pasted image 20250501103921.png",
     "LoRaWAN with  LoRa Ra-02 SX1278 Module.md",
-    "Circuits/Pasted image 20250518151919.png",
     "LoRaWAN - Lab.md",
     "Embeded application/Short note.md",
     "IOT - Kuppi - Note 1.md",
