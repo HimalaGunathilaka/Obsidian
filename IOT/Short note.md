@@ -69,5 +69,7 @@ It ensures **clean digital transitions** by:
 
 This is called **hysteresis**.
 
-
+---
+- `MCU` : Micro controller unit
+- 
 
