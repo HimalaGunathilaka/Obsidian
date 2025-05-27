@@ -15,10 +15,12 @@
 - **LoRaWAN** defines the communication protocol and system architecture.
 - Devices communicate with **gateways**, which forward packets to **network servers**.
 - Supports **bi-directional communication**, **adaptive data rates**, and **end-to-end encryption**.
+- LoRa use concept of chirps (A signal where frequency is continuously increasing or decreasing.)
+- Here a chirp is delayed in a way to represent 
 
 ---
 ### Packet structure
-![[Pasted image 20250526215015.png]]
+![[Pasted image 20250527175339.png]]
 - **Preamble**
     - **Purpose**: Helps the receiver detect the beginning of a packet.
     - **Details**: A sequence of up-chirps that allows the receiver’s automatic gain control (AGC) to settle and synchronize with the incoming signal.
