@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LoRaWAN with  LoRa Ra-02 SX1278 Module.md",
+                "file": "IOT/Short note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LoRaWAN with  LoRa Ra-02 SX1278 Module"
+              "title": "Short note"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "b8b2b0d3bf4c353e",
@@ -183,6 +184,7 @@
   },
   "active": "860e6158eed29e4a",
   "lastOpenFiles": [
+    "LoRaWAN with  LoRa Ra-02 SX1278 Module.md",
     "Pasted image 20250526215015.png",
     "🧪 MQTT with ESP32 – Lab Project.md",
     "Vault/Pasted image 20250523193824.png",
@@ -200,10 +202,8 @@
     "C.md",
     "Circuits/ESP32.md",
     "Untitled.md",
-    "Vault/Pasted image 20250525181943.png",
     "Embeded networking/IOT protocols.md",
     "Embeded networking/Short note.md",
-    "LoRaWAN with  LoRa Ra-02 SX1278 Module.md",
     "LoRaWAN - Lab.md",
     "Embeded application/Short note.md",
     "IOT - Kuppi - Note 1.md",
