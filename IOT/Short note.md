@@ -71,5 +71,15 @@ This is called **hysteresis**.
 
 ---
 - `MCU` : Micro controller unit
-- 
+####  **Open-Drain (or Open-Collector)** — like an **open gate**
+- Has **only one switch to GND** inside (like a transistor).
+- It can only **pull the line LOW**, never push it HIGH.
+- Needs an **external pull-up resistor** to go HIGH.
+- Called "open" because the HIGH side is **left open** (not connected internally).
+####  **Push-Pull (or Totem-Pole)** — like a **closed gate system**
+- Has **two switches inside**:
+    - One can connect the output to **GND** (pull LOW)
+    - The other can connect it to **Vcc** (push HIGH)
+- This output can **both source and sink current**.
+- No external pull-up resistor is needed.
 
