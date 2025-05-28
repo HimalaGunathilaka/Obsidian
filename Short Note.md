@@ -61,3 +61,66 @@ A x = 0
 We mean:
 
 > The number of **basis vectors** needed to **span the kernel**.
+
+## ✅ Step 1: Set up the Equation
+
+You want to find **non-zero vectors** `v` such that:
+
+```
+A * v = λ * v
+```
+
+Rewriting:
+
+```
+(A − λI) * v = 0
+```
+
+This is a **homogeneous system of linear equations** — you're looking for the **null space** (or **kernel**) of the matrix `A − λI`.
+
+---
+
+## ✅ Step 2: Solve the Kernel (Null Space)
+
+1. Compute `A − λI`.
+2. Solve the system:
+
+```
+(A − λI) * v = 0
+```
+
+This means finding all vectors `v` that are sent to the **zero vector** by the matrix `A − λI`.
+
+- These `v` are your **eigenvectors** for the given eigenvalue `λ`.
+- The solution set will typically have **infinitely many vectors** — all scalar multiples of a basis vector (or multiple basis vectors if the eigenspace has higher dimension).
+
+## 🔁 What does it mean when we say:
+
+> "**Matrix AAA is similar to matrix BBB**"?
+
+It means:
+
+	A=PBP−1\boxed{A = PBP^{-1}}A=PBP−1​
+
+for some **invertible matrix** PPP.
+
+| Type                            | Meaning                                                                                                    |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| **Algebraic Multiplicity (AM)** | How many times λ\lambda appears as a root of the **characteristic polynomial**                             |
+| **Geometric Multiplicity (GM)** | The **dimension of the eigenspace**: how many **linearly independent eigenvectors** correspond to λ\lambda |
+
+## 🔁 What does it mean when we say:
+
+> "**Matrix AAA is similar to matrix BBB**"?
+
+It means:
+
+A=PBP−1\boxed{A = PBP^{-1}}A=PBP−1​
+
+for some **invertible matrix** PPP.
+
+
+
+- The **number of Jordan blocks** = **geometric multiplicity**.
+    
+- The **sum of sizes** of the blocks = **algebraic multiplicity**.

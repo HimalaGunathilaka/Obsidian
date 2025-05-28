@@ -124,4 +124,5 @@ g(x) = (x - 2)^2
 |Always monic?|✅ Yes|✅ Yes|
 |Lowest degree?|❌ No|✅ Yes|
 |Unique?|✅ Yes|✅ Yes|
-|Used to find eigenvalues?|✅ Yes|👎 Not primarily|
+|Used to find eigenvalues?|✅ Yes|👎 Not primarily|```
+
