@@ -9,41 +9,7 @@
 ## 🔄 Inverse of a Matrix
 
 ### Methods:
-- **Adjugate/Determinant**: 
-  - Formula: `A⁻¹ = (1/det(A)) * adj(A)`
-  - Good for small matrices.
-
-- **Gaussian Elimination**:
-  - Most efficient and stable method.
-  - Row-reduce `[A | I]` to `[I | A⁻¹]`.
-  - Preferred for solving `Ax = b` directly (without computing A⁻¹).
-
-- **Cayley-Hamilton Theorem** (Theoretical only):
-  - A matrix satisfies its own characteristic equation.
-  - Can sometimes derive `A⁻¹`, but not practical.
-
-### Key Insight:
-> In practice, we **don't compute the inverse** to solve `Ax = b`.  
-> We solve it **directly using row reduction** for better efficiency and accuracy.
-
----
-
-## 🔷 Diagonalization
-
-### Definition:
-A matrix A is diagonalizable if:
-# 🧮 Matrix Concepts Summary
-
-## 🔁 Characteristic Equation
-- Defined as: `det(A - λI) = 0`
-- Purpose: Find eigenvalues of a matrix.
-- Result: A polynomial in λ (the characteristic polynomial).
-- Roots = Eigenvalues of matrix A.
-
-## 🔄 Inverse of a Matrix
-
-### Methods:
-- **Adjugate/Determinant**: 
+- **Adajoint/Determinant**: 
   - Formula: `A⁻¹ = (1/det(A)) * adj(A)`
   - Good for small matrices.
 
