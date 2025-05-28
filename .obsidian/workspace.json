@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Jordan-Normal Form.md",
+                "file": "Short Note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Jordan-Normal Form"
+              "title": "Short Note"
             }
           }
         ],
@@ -181,8 +181,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,8 +197,8 @@
   },
   "active": "9ad0fc396fe083d0",
   "lastOpenFiles": [
-    "Short Note.md",
     "Jordan-Normal Form.md",
+    "Short Note.md",
     "Linear Algebra/Eigen-short note.md",
     "Linear Algebra/Short note - (Linear algebra).md",
     "Embeded networking/🧪 MQTT with ESP32 – Lab Project.md",
