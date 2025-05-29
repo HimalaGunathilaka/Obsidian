@@ -1,0 +1,10 @@
+- Roboflow
+- Make your own os
+- Wimserf
+- Unicorn technologies
+- Deepchecks - Mentor's Work
+- Codium
+- Spiking Neural networks
+- Event camera / DVS
+- The art of FPGA design
+- 
