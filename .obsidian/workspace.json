@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Short Note"
             }
+          },
+          {
+            "id": "f2422646806d886a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Jordan-Normal Form.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Jordan-Normal Form"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -181,11 +196,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7e1218c35df0d8f4",
+  "active": "f2422646806d886a",
   "lastOpenFiles": [
-    "Jordan-Normal Form.md",
-    "Short Note.md",
     "Linear Algebra/Eigen-short note.md",
+    "Untitled.md",
+    "Short Note.md",
+    "Jordan-Normal Form.md",
     "Linear Algebra/Short note - (Linear algebra).md",
     "Embeded networking/🧪 MQTT with ESP32 – Lab Project.md",
     "SE/DevOps and Code Management.md",
@@ -220,7 +236,6 @@
     "Circuits",
     "Embeded application/Menti Questions.md",
     "Robotics/Robotics-Navigation.md",
-    "Robotics/ShortNote.md",
     "IOT",
     "Linear Algebra",
     "Robotics",

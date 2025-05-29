@@ -26,10 +26,10 @@ where \( J \) is the Jordan normal form.
 ---
 
 ### ✅ Step 3: Find Geometric Multiplicity (GM)
-- For each eigenvalue \( \lambda \), compute:
-  $$[
+- For each eigenvalue $( \lambda )$, compute:
+  $$
   dim(\ker(A - \lambda I)) = \text{number of linearly independent eigenvectors for } lambda
-  ]$$
+  $$
 
 ---
 
