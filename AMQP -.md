@@ -1,0 +1,8 @@
+- Application layer 
+- Built on top of tcp
+- Two versions currently 
+- Broker based architecture
+- Broker
+	- Exchange - Direct, Topic, Headers, Fanout
+	- Queuse
+		- Durable, Exclusive, Auto-delete, 
