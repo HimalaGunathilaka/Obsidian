@@ -323,3 +323,68 @@ Let $V$, $W$ be two vector spaces over a common field $\mathbb{F}$. A **linear t
 2. **Additivity:** $T(u + v) = T(u) + T(v)$.  
 3. **Homogeneity (Scalar multiplication):** $T(au) = aT(u)$.  
 If all are correct for a transformation, its a linear transformation.
+>[!tip] Theorem
+>1. $T(\vec{0})=\vec{0}$
+>2.  $T(\vec{-u}) = -T(\vec{u})$
+
+> [!info] Kernel and Range of a Linear Transformation  
+> Let $T : V \to W$ be a **linear transformation** over the field $\mathbb{F}$.
+> 1. The **kernel** of $T$ is  
+>    $$
+>    \ker T = \{ u \in V \mid T(u) = 0 \}
+>    $$
+>    It consists of all vectors in $V$ that map to the zero vector in $W$. (Its like when there is $x\vec{v}$ ,set of all the values which transform v to 0 is the kernel.)
+> 2. The **range** of $T$ is  
+>    $$
+>    \operatorname{ran} T = \{ T(u) \mid u \in V \}
+>    $$
+>    It consists of all vectors in $W$ that are images of vectors in $V$ under $T$. (Its like the range for which transformation T() can reach.)
+
+> [!tip] Rank-Nullity Properties  
+> Let $T : V \to W$ be a **linear transformation** over the field $\mathbb{F}$.
+> 1. $\ker T$ is a **subspace** of $V$.
+> 2. $\operatorname{ran} T$ is a **subspace** of $W$.
+> 
+> We define:
+> - **Nullity** of $T$:  
+>   $$
+>   \operatorname{null} T = \dim(\ker T)
+>   $$
+> - **Rank** of $T$:  
+>   $$
+>   \operatorname{rank} T = \dim(\operatorname{ran} T)
+>   $$
+
+
+> [!theorem] Rank–Nullity Theorem  
+> Let $T : V \to W$ be a linear transformation between finite-dimensional vector spaces over a field $\mathbb{F}$. Then:
+> $$
+> \operatorname{null} T + \operatorname{rank} T = \dim V
+> $$
+> This theorem expresses that the dimension of the domain $V$ is the sum of the dimensions of the kernel and t
+
+>[!note] Complete norm space
+>A **complete normed space** is a vector space **with a norm** where **every Cauchy sequence converges to a point inside the space**.
+This is called a **Banach space**.
+
+---
+# Matrix of a Linear Transformation
+
+Let $T : V \to W$ be a linear transformation over a field $F$, and let $\{u_i\}_{i=1}^n$ and $\{w_j\}_{j=1}^m$ be ordered bases of $V$ and $W$, respectively.
+Then, the matrix $A \in F^{m \times n}$, where the columns of $A$ are the coordinate vectors of $T(u_i)$ expressed in the basis $\{w_j\}$, is called the **matrix of $T$** with respect to the bases $\{u_i\}$ and $\{w_j\}$.
+That is,
+$$
+T(u_i) = \sum_{j=1}^m A_{ji} w_j,
+$$
+
+or in matrix notation:
+$$
+[T(u_1) \ \cdots \ T(u_n)] = [w_1 \ \cdots \ w_m] \cdot A.
+$$
+This matrix allows us to compute the transformation $T$ in terms of coordinates.
+(Basically basis of V is transformed to basis of W. It is not a must, but a super useful characteristic if present.)
+
+>[!theorem] 
+>Let $(u_i)$, $(u'_i)$ and $(w_j)$, $(w'_j)$ be two ordered bases of $V$ and $W$ respectively.  
+With  $(u'_i) = (u_i) P \quad \text{and} \quad (w'_j) = (w_j) Q,$ and  $$A = T_{(u_i),(w_j)}, \quad A' = T_{(u'_i),(w'_j)},$$  
+>we have  $$A P = Q A' \quad \text{or equivalently} \quad A' = Q^{-1} A P.$$
