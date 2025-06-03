@@ -38,7 +38,6 @@ A = P D P⁻¹
 
 - `D`: Diagonal matrix (eigenvalues on the diagonal).
 - `P`: Matrix of eigenvectors.
-
 ### Conditions:
 - A has enough linearly independent eigenvectors.
 - Always true for symmetric matrices.
@@ -61,10 +60,11 @@ A = P D P⁻¹
 | Diagonalization      | Simplify matrix operations          | Powers, differential equations, PCA        |
 # 🔹 Minimal Polynomial (Informal Definition)
 
+> [!note]
 > The **minimal polynomial** of a square matrix `A` is the **simplest polynomial** (with smallest degree and leading coefficient 1) such that:
 >
 > ```
-> g(A) = 0
+> g(A) = 0 // Geometric multiplicity
 > ```
 
 It’s the **"smallest expression using powers of A"** that completely cancels the matrix.
@@ -98,14 +98,11 @@ It’s the **"smallest expression using powers of A"** that completely cancels t
 ## 🧪 Example (2x2 matrix)
 
 Let:
-
-```math
 A = [[2, 1],
      [0, 2]]
 We try:
 
 - `(A - 2I) ≠ 0`
-    
 - `(A - 2I)^2 = 0`
     
 

@@ -388,3 +388,71 @@ This matrix allows us to compute the transformation $T$ in terms of coordinates.
 >Let $(u_i)$, $(u'_i)$ and $(w_j)$, $(w'_j)$ be two ordered bases of $V$ and $W$ respectively.  
 With  $(u'_i) = (u_i) P \quad \text{and} \quad (w'_j) = (w_j) Q,$ and  $$A = T_{(u_i),(w_j)}, \quad A' = T_{(u'_i),(w'_j)},$$  
 >we have  $$A P = Q A' \quad \text{or equivalently} \quad A' = Q^{-1} A P.$$
+
+---
+# Eigen values and Eigen vectors
+Let $T : V \to V$ be a linear transformation on a vector space over $F$.  
+$\lambda \in F$ is an eigenvalue and $0 \neq v \in V$ is a corresponding eigenvector $\iff T(v) = \lambda v.$
+- The eigenspace $V_\lambda$ of the eigenvalue $\lambda$ is the set of all eigenvectors corresponding to $\lambda$ together with the zero vector, i.e.,  
+$$
+V_\lambda = \{ v \in V \mid T(v) = \lambda v \} \cup \{0\}.
+$$
+- i.e. $V_\lambda = \{ v \in V \mid T(v) = \lambda v \} = \{ v \in V \mid (T - \lambda I)(v) = 0 \} = \ker(T - \lambda I),$  where $I$ is the identity linear transformation $I : V \to V$ with $I(x) = x$ for all $x \in V$.  Note that if $\lambda$ exists, $V_\lambda$ is a subspace of $V$. We call its basis elements (which are non-zero) the eigenvectors.
+>[!theorem]
+>- If eigen values / vectors exists then $V_{\lambda}$ is a subspace of $v$
+
+1. Eigenvalues $\lambda$ and Eigenvectors $v$ of the matrix $A \in F^{n \times n}$ are defined to be the same as for the Linear Transformation $T : F^n \to F^n$ over $F$ defined by $T(v) = Av$ where $v \in F^n$.  
+   i.e. for $A \in F^{n \times n}$, they satisfy  $$
+   Av = \lambda v
+   $$
+   such that $\lambda \in F$ and $0 \neq v \in F^n$.
+
+2. The eigenvalues satisfy the characteristic equation  $$
+   \det(A - \lambda I) = 0.
+   $$
+3. $f(x) = \det(xI - A) = (-1)^n \det(A - xI)$, $x \in F$, is called the **characteristic polynomial** of $A$.
+
+4. Matrices $A$ and $B$ are **similar** iff there exists an invertible matrix $P$ such that ,$$
+   AP = PB.
+   $$
+>[!theorem] 
+>$T_1$
+>- Similar matrices have the same eigenvalues.  
+>- Eigenvalues of $T : V \to V$ over $F$ and the eigenvalues of the matrix of $T$ are the same for any choice of basis.  
+>- If the eigenvalues are different, then the corresponding eigenvectors are linearly independent.
+>
+>$T_2$
+>- $\prod \lambda = \det A$: product of eigenvalues is the determinant of $A$.  
+>- $\sum \lambda = \operatorname{trace} A$: sum of eigenvalues is the trace of $A$ (sum of the diagonal elements).  
+>- $f(A) = 0$: matrix $A$ satisfies its own characteristic polynomial (Cayley-Hamilton theorem).
+
+---
+~={blue}Minimal polynomial=~ $g(x)$ of $A \in \mathbb{C}^{n \times n}$ satisfies:  
+1. $g(x)$ is monic.  
+2. $g(A) = 0$.  
+3. No non-zero polynomial $h(x)$ with lesser degree satisfies $h(A) = 0$.
+More below,
+[[Eigen-short note#🔹 Minimal Polynomial (Informal Definition)]]
+
+---
+>[!note]
+>1. ~={pink}Algebraic multiplicity =~of $\lambda$: $a_\lambda$ is the power of $(x - \lambda)$ in $f(x)$.  
+>2. ~={pink}Geometric multiplicity=~ of $\lambda$: $g_\lambda = \dim V_\lambda = \dim(\ker(A - \lambda I)) = \operatorname{null}(A - \lambda I)$.  
+>3. ~={pink}Minimal multiplicity=~ of $\lambda$: $m_\lambda$ is the power of $(x - \lambda)$ in $g(x)$ (the minimal polynomial).$$
+a_i - g_i \ge m_i - 1 \ge 0
+$$
+
+~={cyan}More below,=~
+[[More on Jordan Normal form#🧩 Algebraic vs Geometric Multiplicity]]
+
+---
+~={cyan}On diagonalizability,=~
+[[Short note - (Linear algebra)#Eigenvalues, Eigenvectors, and Diagonalizability]]
+
+---
+
+## Some definitions
+
+- Let $P \in \mathbb{C}^{n \times n}$ be said to be **~={blue}Unitary=~** $\iff P^H P = P P^H = I,$ i.e. $P^{-1} = P^H.$ If $P$ has orthonormal columns, then $P$ is Unitary.
+- $A \in \mathbb{C}^{n \times n}$ is **Positive Definite (PD)** $\iff x^H A x > 0 \quad \text{for all } x \neq 0.$
+- 

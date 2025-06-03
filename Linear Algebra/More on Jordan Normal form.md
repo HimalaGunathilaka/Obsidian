@@ -148,3 +148,22 @@ This means:
 
 - $m_2 \in \text{Im}(A - I)$
 - There **exists** some $m_3$ such that $(A - I)m_3 = m_2$
+---
+# Hermitian
+$A \in \mathbb{C}^{n \times n}$ is **Hermitian** iff  
+$$
+A^H = A,
+$$  
+where $A^H$ is the conjugate transpose of $A$, i.e., $A^H = \overline{A}^T$.
+>[!theorem]
+**Theorem 32.** Let $A \in \mathbb{C}^{n \times n}$ be Hermitian, then  
+>1. The eigenvalues of $A$ are real.  
+>2. Eigenvectors corresponding to distinct eigenvalues are orthogonal.  
+>3. (**Spectral Theorem**) $A$ has $n$ orthogonal (i.e., orthonormal) eigenvectors.
+
+- A matrix $P \in \mathbb{C}^{n \times n}$ is said to be **~={blue}Unitary=~** iff $P^H P = P P^H = I,$  i.e., when $P^{-1} = P^H$.  
+- If $P$ has orthonormal columns, then $P$ is unitary.
+- A matrix  is Positive Definite (PD) iff  $x^H A x > 0 \quad \text{for all } x \neq 0.$
+
+>[!theorem]
+>If $A$ is Hermitian, then $A$ is **positive definite** iff all its eigenvalues are **positive**.
