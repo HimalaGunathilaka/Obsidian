@@ -94,4 +94,34 @@ Let $B$ be a non-empty finite subset of a vector space $V$ over a field $F$. $B$
 - Let a basis $B$ have $n$ elements in a vector space $V$ over a field $F$. Then:
     1. Any subset of $V$ with more than $n$ elements is linearly dependent.
 	2. Any subset of $V$ with fewer than $n$ elements does not span $V$.
-- 
+- Any two bases in a vector space has the same number of elements.
+- Representation of any element in a vector space by a given basis is unique. i.e. the associated field elements are unique.
+- If B spans a vector space V but no proper subset of B spans V . Then B is a basis for V . (Basically B has enough elements, not more to cover up V.)
+- Let B be a `LI` subset of V . Then B can be extended to a basis.(Already the previous terms are linearly independent, so we can add new linearly independent terms to form the basis.)
+- Let B be a spanning subset of V . Then B can be reduced to a basis. ~={cyan}(A **spanning subset** is any set of vectors whose **span is the entire space**.)=~
+- B is a basis iff B is maximally linearly independent(no super set that contains B is linearly independent).
+
+>Note
+
+Consider the system of equations $A_{n \times m} X_{m \times 1} = b_{n \times 1}$, i.e., $n$ equations in~={red} $m$ =~variables.
+1. If $\text{rank}(A|b) > \text{rank}(A)$, then there are **no solutions** (inconsistent system).
+2. If $\text{rank}(A|b) = \text{rank}(A) = r$, then the system is **consistent**:
+	1. If $r = m$, then there is a **unique solution**. 
+	2. If $r < m$, then there are **infinitely many solutions**.  
+	3. If $r > m$, this is **not possible** because rank cannot exceed the number of columns $m$.
+3. If $\text{rank}(A|b) < \text{rank}(A)$, this is **not possible** by definition of augmented matrix rank.
+Here (A|b) is the augmented matrix.
+
+---
+# Hamel basis
+Basis Such that it need not be finite and only finite linear combinations are taken. (Like x powers in $e^{x}$ expansion)
+In other words, Hamel basis has infinite elements, there for its fine to take only fininte number of elements.
+
+~={cyan}**"Properly contained"** (also called **proper subset**) means that one set is **strictly inside** another set — it is **contained** but **not equal**.=~
+
+>Definition
+- A collection of sets $\mathcal{C}$ is called a **chain** if and only if for all $A, B \in \mathcal{C}$, either $A \subseteq B$ or $B \subseteq A$.
+- An element $M$ of a collection of sets $\mathcal{D}$ is called **maximal** if and only if $M$ is not properly contained in any element of $\mathcal{D}$.
+>Theorems
+- ~={green}Zorn’s Lemma=~ : If for every chain $\mathcal{C}$ in a collection $\mathcal{D}$, there exists an element $U \in \mathcal{D}$ such that $U$ contains every member of $\mathcal{C}$ (i.e., $U$ is an upper bound of $\mathcal{C}$), then $\mathcal{D}$ has a maximal element.
+- Every vector space has a Hamal Basis.

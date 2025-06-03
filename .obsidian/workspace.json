@@ -167,7 +167,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,16 +184,19 @@
   },
   "active": "ffd912fc1317e462",
   "lastOpenFiles": [
-    "AMQP -.md",
-    "Abstract Algebraic Structures.md",
     "XMPP - Extensible messaging and presence protocol.md",
+    "Linear Algebra/Norm vs Magnitude.md",
+    "Linear Algebra/More on Jordan Normal form.md",
+    "Linear Algebra/QR-Decomposition Matrixes.md",
+    "Linear Algebra/Short note - (Linear algebra).md",
+    "Linear Algebra/Gram schmidt process.md",
+    "Linear Algebra/Eigen-short note.md",
+    "Abstract Algebraic Structures.md",
+    "AMQP -.md",
     "Quiz 15 by 220199L.md",
     "Topics of interest.md",
-    "Linear Algebra/QR-Decomposition Matrixes.md",
     "Vault/Pasted image 20250518151919.png",
     "Linear Algebra/Inner product.md",
-    "Linear Algebra/Norm vs Magnitude.md",
-    "Linear Algebra/Eigen-short note.md",
     "Quiz 16 by 220199L.md",
     "Vault/Pasted image 20250601160744.png",
     "Vault/Pasted image 20250601161731.png",
@@ -203,10 +207,7 @@
     "Vault/Pasted image 20250601160843.png",
     "Vault/Pasted image 20250601160832.png",
     "Vault/Pasted image 20250601160817.png",
-    "Linear Algebra/Gram schmidt process.md",
     "Linear Algebra/Jordan-Normal Form.md",
-    "Linear Algebra/More on Jordan Normal form.md",
-    "Linear Algebra/Short note - (Linear algebra).md",
     "Embeded networking/🧪 MQTT with ESP32 – Lab Project.md",
     "SE/DevOps and Code Management.md",
     "SE/Week 10.md",
