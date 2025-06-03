@@ -115,7 +115,7 @@ Here (A|b) is the augmented matrix.
 ---
 # Hamel basis
 Basis Such that it need not be finite and only finite linear combinations are taken. (Like x powers in $e^{x}$ expansion)
-In other words, Hamel basis has infinite elements, there for its fine to take only fininte number of elements.
+~={blue}In other words, Hamel basis has infinite elements, there for its fine to take only fininte number of elements.=~
 
 ~={cyan}**"Properly contained"** (also called **proper subset**) means that one set is **strictly inside** another set — it is **contained** but **not equal**.=~
 
@@ -125,3 +125,201 @@ In other words, Hamel basis has infinite elements, there for its fine to take on
 >Theorems
 - ~={green}Zorn’s Lemma=~ : If for every chain $\mathcal{C}$ in a collection $\mathcal{D}$, there exists an element $U \in \mathcal{D}$ such that $U$ contains every member of $\mathcal{C}$ (i.e., $U$ is an upper bound of $\mathcal{C}$), then $\mathcal{D}$ has a maximal element.
 - Every vector space has a Hamal Basis.
+---
+# Dimension
+The number of elements in a basis of a vector space $V$ is called its **dimension**, denoted by $\dim V$.  
+We define $\dim \{0\} = 0$, where $\{0\}$ is the zero vector space.
+
+---
+# Schauder basis
+A **Schauder basis** $B$ is a basis such that it is **countably infinite**, and **infinite sums** (i.e., infinite linear combinations) are allowed to represent elements of the space.
+- A **Schauder basis** is used in **infinite-dimensional vector spaces**, especially in **functional analysis**.
+- Unlike a finite basis (where vectors are written as finite linear combinations), a **Schauder basis** allows:$$x = \sum_{n=1}^{\infty} a_n x_n$$where the sum is an **infinite linear combination** that **converges** (typically in norm or topology) to the vector $x$.
+>Theorem
+- If $f \in C[-\pi, \pi]$ and $\sum_{k=-\infty}^{\infty} |c_k|$ is convergent, then the Fourier series of $f$ **exists** and **converges uniformly** to $f$ on $[-\pi, \pi]$. Note that $f \in C[-\pi, \pi] \Rightarrow f \in L^2[-\pi, \pi]$.
+
+---
+# Inner product
+Let $V$ be a vector space over an ordered field $(F, +, \cdot, \le)$. Then an **inner product** $\langle \cdot, \cdot \rangle$ on $V$ is a function satisfying the following properties for all $x, y, z \in V$ and $a \in F$:
+
+1. $\langle \cdot, \cdot \rangle : V \times V \to F$ is a function  
+2. $\langle x, y \rangle = \langle y, x \rangle$ (Symmetry)  
+3. $\langle x, y + z \rangle = \langle x, y \rangle + \langle x, z \rangle$ (Linearity in the second argument)  
+4. $\langle ax, y \rangle = a \langle x, y \rangle$ (Homogeneity in the first argument)  
+5. $\langle x, x \rangle \ge 0$ and $\langle x, x \rangle = 0$ if and only if $x = 0$ (Positive-definiteness)
+> **Note:**  
+> $F = \mathbb{C}$ is **not** an ordered field.  
+> However, a proper subset $\mathbb{R} \subset \mathbb{C}$ **is** an ordered field.  
+> 
+> We define or ensure the order properties on $\mathbb{R}$, but such an order **cannot** be extended to the entire field $\mathbb{C}$ while preserving field operations.
+- $\overline{\langle x, y \rangle} = \langle y, x \rangle$
+- ${\langle ax, y \rangle} = \bar{a}\langle y, x \rangle$
+- $\langle x, x \rangle , 0 \in \mathbb{R}$ 
+>Further
+- We define the norm of $x$ as $\|x\| = \sqrt{\langle x, x \rangle}$
+- $\langle x, y \rangle = x^H \cdot y$ for $V = \mathbb{C}^n$ over $F = \mathbb{C}$,  where the Hermitian of $x$ is $x^H = \overline{x}^T =\overline{ x^T}$ 
+- $\langle A, B \rangle = \operatorname{Tr}(A^H B)$ for $V = \mathbb{C}^{n \times n}$ over $F = \mathbb{C}$, where the trace $\operatorname{Tr}$ is the sum of the diagonal elements.
+>Theorems
+- **Cauchy–Schwarz Inequality:**  
+$$
+|\langle u, v \rangle| \leq \|u\| \|v\|
+$$
+- **Triangle Inequality:**  
+$$
+\|u + v\| \leq \|u\| + \|v\|
+$$
+
+## Ordered field
+A field $F$ is called an **ordered field** if:
+- There is a **total order** $<$ on $F$ such that for all $a, b, c \in F$:
+	- **Trichotomy**: Exactly one of the following is true: $a < b$, $a = b$, or $a > b$
+	- **Transitivity**: If $a < b$ and $b < c$, then $a < c$
+- The order is **compatible with field operations**:
+	- If $a < b$, then $a + c < b + c$
+	- If $0 < a$ and $0 < b$, then $0 < ab$
+
+
+---
+# Orthogonality vs Orthonormality
+
+$x, y \in V$
+
+1. $x, y \in V$ are **orthogonal** iff $\langle x, y \rangle = 0$  
+2. $x, y \in V$ are **orthonormal** iff $x, y$ are orthogonal and $\|x\| = \|y\| = 1$
+
+If the above conditions are satisfied for **all** $x, y \in B$, we say that the set $B$ is **orthogonal** or **orthonormal** respectively.
+
+>Theorem
+- If $0 \notin B$ and $B$ is orthogonal, then $B$ is linearly independent.
+- [[Gram schmidt process]]
+
+> [!note]- Note  
+> Let $V = \mathbb{R}[x]$, $F = \mathbb{R}$ and $B = \{1, x, x^2, x^3, \ldots \}$ be the standard basis.
+> 
+> 1. **Orthogonal basis w.r.t. the inner product**  
+>    $$
+>    \langle f, g \rangle = \int_{-1}^1 f(x) g(x) \, dx
+>    $$  
+>    is  
+>    $$
+>    B = \left\{1, x, \frac{1}{2}(3x^2 - 1), \ldots \right\} = \{P_n(x)\}_{n=0}^\infty
+>    $$  
+>    where $P_n(x)$ are the **Legendre polynomials**.  
+>    They satisfy the ODE:  
+>    $$
+>    (1 - x^2) y'' - 2x y' + n(n+1) y = 0.
+>    $$
+> 
+> 2. **Orthogonal basis w.r.t. the inner product**  
+>    $$
+>    \langle f, g \rangle = \int_0^\infty e^{-x} f(x) g(x) \, dx
+>    $$  
+>    is  
+>    $$
+>    B = \left\{1, -x + 1, \frac{1}{2}(x^2 - 4x + 2), \ldots \right\} = \{L_n(x)\}_{n=0}^\infty
+>    $$  
+>    where $L_n(x)$ are the **Laguerre polynomials**.  
+>    They satisfy the ODE:  
+>    $$
+>    x y'' + (1 - x) y' + n y = 0.
+>    $$
+> 
+> 3. **Orthogonal basis w.r.t. the inner product**  
+>    $$
+>    \langle f, g \rangle = \int_{-1}^1 \frac{1}{\sqrt{1 - x^2}} f(x) g(x) \, dx
+>    $$  
+>    is  
+>    $$
+>    B = \left\{1, x, 2x^2 - 1, \ldots \right\} = \{T_n(x)\}_{n=0}^\infty
+>    $$  
+>    where $T_n(x)$ are the **Chebyshev polynomials**.  
+>    They satisfy the ODE:  
+>    $$
+>    (1 - x^2) y'' - x y' + n^2 y = 0.
+>    $$
+>    It is also true that  
+>    $$
+>    T_n(\cos \theta) = \cos(n \theta).
+>    $$
+
+---
+# Normal subspace
+~={blue}A **normal subspace** usually refers to a subspace that is, in some sense, _perpendicular_ or _orthogonal_ to another subspace in a vector space with an inner product.=~
+Let $W$ be a non-empty subset of an inner product space $V$ over $F$.  
+The **Normal Subspace** of $W$, or the **$W$ perpendicular space**, is defined as  
+$$
+W^\perp = \{ u \in V \mid \langle u, w \rangle = 0, \; \forall w \in W \}.
+$$
+
+
+> [!tip] Theorems
+> 1. $W^\perp$ is a [[#Subspace]] of $V$.  
+> 2. $(W^\perp)^\perp \supseteq W$.  
+> 3. $W \cap W^\perp = \{0\}$, if $W$ is also a subspace.  
+> 4. If $W$ is a subspace of $V$, then any $u \in V$ can be written as  
+>    $$
+>    u = P u + Q u
+>    $$  
+>    where  
+>    $Q u \in W^\perp$ and  
+>    $$
+>    P u = \sum_i \overline{\langle u, w_i \rangle} w_i \in W,
+>    $$  
+>    with $\{w_i\}$ an orthonormal basis for $W$. Using (3), this expression is unique.  (Basically any vector can be written as part of W and W normal space.)
+> 5. In the setting described by (4), we write  
+>    $$
+>    V = W \oplus W^\perp,
+>    $$  
+>    and say that $V$ is a **direct sum** of $W$ and $W^\perp$.  
+> 6. With the setting in (4), $P u$ is the **best approximation** to $u$ in $W$, i.e.  
+>    $$
+>    \|u - P u\| \leq \|u - w\|
+>    $$  
+>    for any $w \in W$. (The vector $P \vec{u}$ (which is the projection of $\vec{u}$ onto W) is **the closest vector** in W. “Closest” here means the distance (norm) between $\vec{u}$ and $P\vec{u}$ is the smallest possible compared to any other vector $\vec{w}$ in W.)
+
+# Norm
+A norm $|| \cdot ||$ on a vector space $V$ over $F = \mathbb{C}$ satisfies, for all  $u, v \in V$ and $a \in F$:  
+1. $|| \cdot || : V \to F$ is a function.  
+2. $||v|| \geq 0$ and $||v|| = 0$ $\iff$ $v = \vec{0}$.  
+3. $||a v|| = |a| \, ||v||$.  
+4. $||u + v|| \leq ||u|| + ||v||$.  
+If $V$ also has a multiplication (like in the case of matrices), we also require:  
+5. $||u v|| \leq ||u|| \, ||v||$.
+
+> [!tip] Note  
+> 1. If we have a **norm**, we can define **Cauchy sequences**. A sequence $u_n$ is Cauchy if  
+>    $$
+>    \forall \varepsilon > 0, \exists N \in \mathbb{Z}^+ \text{ such that } \forall m, n > N, \ ||u_n - u_m|| < \varepsilon.
+>    $$
+> 2. If **all** Cauchy sequences in $V$ converge to a point in $V$, we say that **$V$ is complete**.  
+> 3. A **Banach space** is a complete **normed** space.  (==A **Banach space** is a space where you can do linear algebra and measure vector lengths, **and** where sequences that look like they should converge actually **do converge** inside the space.==)
+> 4. As defined earlier, we can have a **norm** that does **not** come from an inner product.  
+>    But if we **have an inner product**, we can always define a norm by  
+>    $$
+>    ||x|| = \sqrt{\langle x, x \rangle}.
+>    $$
+> 5. A **Hilbert space** is a complete **inner product** space.  
+> 6. If $V$ is a normed space, we can define a **metric** (distance function) by  
+>    $$
+>    d(x, y) = ||x - y||.
+>    $$
+> 7. But we can also have a **matric** that does **not** come from a norm. A general **matric** is defined as follows...
+
+---
+# Metric
+
+A **metric** $d$ on a set $V$ is a function that satisfies the following properties for all $x, y, z \in V$:  
+1. $d : V \times V \to \mathbb{R}$ is a function.  
+2. **Symmetry:** $d(x, y) = d(y, x)$.  
+3. **Triangle inequality:** $d(x, z) \leq d(x, y) + d(y, z)$.  
+4. **Non-negativity and definiteness:** $d(x, y) \geq 0$ and $d(x, y) = 0$ if and only if $x = y$.  
+Basically: if you define your own custom "distance", it has to follow these rules to be a **metric**.
+
+---
+# Linear transformation
+
+Let $V$, $W$ be two vector spaces over a common field $\mathbb{F}$. A **linear transformation** $T$ from $V$ to $W$ satisfies the following for all $u, v \in V$ and $a \in \mathbb{F}$
+1. $T : V \to W$ is a function.  
+2. **Additivity:** $T(u + v) = T(u) + T(v)$.  
+3. **Homogeneity (Scalar multiplication):** $T(au) = aT(u)$.  
+If all are correct for a transformation, its a linear transformation.
