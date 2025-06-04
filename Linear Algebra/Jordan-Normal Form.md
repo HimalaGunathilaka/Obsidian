@@ -1,11 +1,10 @@
-# How to Find the Jordan Normal Form
-
+Jordan decomposition for $A \in \mathbb{C}^{n \times n}$ is below,
 ## Goal:
 Find matrices \( J \) and \( P \) such that:
 $$[
 A = P J P^{-1}
 ]$$
-where \( J \) is the Jordan normal form.
+where $( J )$ is the Jordan normal form.
 
 ---
 
@@ -37,6 +36,21 @@ where \( J \) is the Jordan normal form.
 - Number of Jordan blocks for each eigenvalue = GM.
 - Sum of the sizes of these blocks = AM.
 - For example, if AM = 3 and GM = 1, then there is one Jordan block of size 3.
+>[!note]
+>- Jordan block for $\lambda$ consists of $\lambda$ on the diagonal, 1 on the upper sub diagonal (If exists) and rest of the elements are 0.
+
+>[!theorem]
+>- Every $A \in \mathbb{C}^{n \times n}$ has a Jordan decomposition.
+>- If $A \in \mathbb{C}^{n \times n}$ has n L.I eigen vectors then the Jordan decomposition coincides with the Eigen value decomposition.
+>- If Jordan blocks of the eigenvalues are of the sizes $\lambda$ are of  the sizes $1 \le k_1,k_2, ... , k_r$,
+>	1. $g_{\lambda} = r$
+>	2. $a_\lambda = \sum_{i=1}^{r} k_i \ge \sum_{i=1}^{r} 1 = r = g_\lambda$
+>	3. $m_\lambda = \max\{k_1, k_2, \cdots, k_r\} = k_j$, say  
+>	4. Therefore, $a_\lambda - g_\lambda = \sum_{i=1}^{r}(k_i - 1) \ge k_j - 1 = m_\lambda - 1$, so $a_\lambda \ge g_\lambda$ since $m_\lambda \ge 1$  
+>	5. $a_\lambda - g_\lambda = m_\lambda - 1$ if the size of the matrix $n \le 3$
+
+
+
 
 ---
 

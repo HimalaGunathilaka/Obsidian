@@ -456,3 +456,7 @@ $$
 - Let $P \in \mathbb{C}^{n \times n}$ be said to be **~={blue}Unitary=~** $\iff P^H P = P P^H = I,$ i.e. $P^{-1} = P^H.$ If $P$ has orthonormal columns, then $P$ is Unitary.
 - $A \in \mathbb{C}^{n \times n}$ is **Positive Definite (PD)** $\iff x^H A x > 0 \quad \text{for all } x \neq 0.$
 - 
+---
+# [[Jordan-Normal Form]]
+
+---
