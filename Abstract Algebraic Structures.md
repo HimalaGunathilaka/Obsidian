@@ -2,7 +2,7 @@
 - A set G together with a binary operation $*$ (often called multiplication or addition) is called a **group**. (G,$*$)
 - It should satisfy following properties,
 	1. G not equal null
-	2. $G \times G \rightarrow G$ is a function. (All inputs are accountable, (Explain what is accountable here))
+	2. $*|G \times G \rightarrow G$ is a function. (All inputs are accountable, (Explain what is accountable here))
 		- That means $a \in G, b \in G ; a * b \in G$
 		- ==In other words, using binary operator present, you can't go out of the set.==
 	3. $\forall a,b,c \in G; a * (b*c) = (a*b)*c$ , ($*$ is associative)
@@ -30,22 +30,22 @@ So, if perform within a single set, it may can give result outside the set,
 
 ---
 # Fields
-- Defined as $(F, \operator1,\operator2)$
+- Defined as $(F, +,*)$
 - A field has few properties, 
 	1. $(F,+)$ is an abelian group
 	2. $(F-\set{e_+},*)$ is an abelian group
-	3.  $F \times F \rightarrow F$ is a function. ($\times$ operator is closed)
+	3.  $*|F \times F \rightarrow F$ is a function. ($\times$ operator is closed)
 	4. $\forall a,b,c \in F; a*(b+c) = a*b + a*c$ ; (Distributive law)
->Note
-- A field should have at least two elements. (Identities of the above abelian groups.)
-- 
->Theorems
-- Let $(F,+,*)$ be a field and $a \in F$, 
-	1. $0*a=0$
-	2. $0 \ne 1$
-- ==Here the underscritpt number in the operator means that it uses the set of that number modules values. I mean just that the operator result must be the modulas of p==
-	- $F_p = \set{0,1,2,3,4, ..., p-1}$ , p is prime, the ($F_p, +_p,*_p$) is a field.
-	- F is a finite field $\iff$ the (number of elements in F), $|{F}| = p^{k}$ , p is prime, $k \in \mathbb{Z}^+$ 
+>[!note]
+>- A field should have at least two elements. (Identities of the above abelian groups.)
+
+>[!Theorems]
+> - Let $(F,+,*)$ be a field and $a \in F$, 
+> 	1. $0*a=0$
+> 	2. $0 \ne 1$
+>- ==Here the underscritpt number in the operator means that it uses the set of that number modules values. I mean just that the operator result must be the modulas of p==
+>	- $F_p = \set{0,1,2,3,4, ..., p-1}$ , p is prime, the ($F_p, +_p,*_p$) is a field.
+>	- F is a finite field $\iff$ the (number of elements in F), $|{F}| = p^{k}$ , p is prime, $k \in \mathbb{Z}^+$ 
 
 ---
 # Vector space
