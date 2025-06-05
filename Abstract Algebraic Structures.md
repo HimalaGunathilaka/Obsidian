@@ -54,8 +54,9 @@ So, if perform within a single set, it may can give result outside the set,
 	2. $(F,+,.)$ is a field
 	3. $*|F \times V \rightarrow V$ ; is a function
 	4.  $\forall a,b \in F;\forall v \in V; (a+b)*v = a*v \# b*v$ 
-	5. $\forall a,b \in F;\forall v,u \in V; a.(v\#u) = a.v \# a.u$ 
-	6. $\forall a,b \in F;\forall v \in V; (a.b)*v = a*(b.v)$
+	5. $\forall a,b \in F;\forall v,u \in V; a*(v\#u) = a*v \# a*u$ 
+	6. $\forall a,b \in F;\forall v \in V; (a.b)*v = a*(b*v)$
+	7. $\forall x \in V; 1 * x = x$ 
 >Confusing symbol explanation
 - $(F, +, \cdot)$ is a field:
     - $+$ is field addition: $a + b$
@@ -65,6 +66,8 @@ So, if perform within a single set, it may can give result outside the set,
     - $*$ is scalar multiplication: $a * \vec{v}$ where $a \in F$, $\vec{v} \in V$
 ---
 # Subspace
+- Closure under scaler multiplication
+- Closure under vector addition
 Let `V` be a vector space over `F` and `S` be a non empty subset of `V`. Then,
 	`S` is a subspace of `V` $\iff$ `S` is a vector space over `F` 
 (Basically its a fragment of the original vector space. But it is a vector space it self.)
@@ -79,13 +82,15 @@ If $\text{Span}(B) = W$, we say that $B$ spans $W$.
 - In other words, `span is like the all vectors inside a vector space`
 - $span(B) = V$ --> B span V
 - B is ~={purple}linearly independent=~ $\iff \left\{\sum_{i=1}^{n}a_ix_i = \vec{0} \implies \forall i,a_i\right\} =0$ 
+- Here **Scaler multiplication** along with **vector addition** is used to get the 0.
 
->Theorem
-1. If $B' \subseteq B$, then $\text{Span}(B') \subseteq \text{Span}(B) \subseteq V$  
-2. $\vec{0} \in \text{Span}(B)$  
-3. $\text{Span}(B)$ is a subspace of $V$  
-4. $\text{Span}(B)$ is the smallest subspace of $V$ that contains $B$
-- If $B = \{x_1, x_2, \dots, x_n\}$ is linearly dependent, then at least one element of $B$ can be written as a linear combination of the others.
+>[!Theorem]
+>1. If $B' \subseteq B$, then $\text{Span}(B') \subseteq \text{Span}(B) \subseteq V$  
+>2. $\vec{0} \in \text{Span}(B)$  
+>3. $\text{Span}(B)$ is a subspace of $V$  
+>4. $\text{Span}(B)$ is the smallest subspace of $V$ that contains $B$
+>- If $B = \{x_1, x_2, \dots, x_n\}$ is linearly dependent, then at least one element of $B$ can be written as a linear combination of the others.
+
 ---
 # Basis
 Let $B$ be a non-empty finite subset of a vector space $V$ over a field $F$. $B$ is called a **basis** of $V$ if and only if ~={yellow}$B$ spans $V$ =~and ~={yellow}$B$ is linearly independent=~.
