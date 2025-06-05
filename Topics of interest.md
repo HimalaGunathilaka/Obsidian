@@ -7,4 +7,5 @@
 - Spiking Neural networks
 - Event camera / DVS
 - The art of FPGA design
-- 
+- Generating art from code
+- Setting points of interest in Chat bots
