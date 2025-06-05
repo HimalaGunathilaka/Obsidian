@@ -50,10 +50,10 @@ So, if perform within a single set, it may can give result outside the set,
 ---
 # Vector space
 - $(V,\#,*)$ over $(F,+,.)$ is a vector space $\iff$
-	1. $(V,\#)$ is an abelian group
+	1. $(V,\#)$ is an [[#Abelian Group or Commutative group]]
 	2. $(F,+,.)$ is a field
-	3. $F \times V \rightarrow V$ ; is a function
-	4.  $\forall a,b \in F;\forall v \in V; (a+b)*v = a.v + b.v$ 
+	3. $*|F \times V \rightarrow V$ ; is a function
+	4.  $\forall a,b \in F;\forall v \in V; (a+b)*v = a*v \# b*v$ 
 	5. $\forall a,b \in F;\forall v,u \in V; a.(v\#u) = a.v \# a.u$ 
 	6. $\forall a,b \in F;\forall v \in V; (a.b)*v = a*(b.v)$
 >Confusing symbol explanation
