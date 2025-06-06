@@ -9,3 +9,5 @@
 - The art of FPGA design
 - Generating art from code
 - Setting points of interest in Chat bots
+- Singular value decomposition
+- NOSQL database

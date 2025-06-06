@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Abstract Algebraic Structures.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -185,8 +185,8 @@
   },
   "active": "9b39816c83ed4702",
   "lastOpenFiles": [
-    "Abstract Algebraic Structures.md",
     "Topics of interest.md",
+    "Abstract Algebraic Structures.md",
     "Excalidraw/Drawing 2025-06-04 12.11.30.excalidraw.md",
     "Zieglor-Nichols method.md",
     "XMPP - Extensible messaging and presence protocol.md",
