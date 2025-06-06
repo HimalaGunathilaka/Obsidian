@@ -115,7 +115,7 @@ $\| v \|_\infty = \max_i |v_i|$
 
 ## Diagonalizability
 
-- A matrix \( A \) is **diagonalizable** if there exists an invertible matrix \( P \) (formed from its eigenvectors) such that:
+- A matrix $( A )$ is **diagonalizable** if there exists an invertible matrix $( P )$ (formed from its eigenvectors) such that:
 
   $$ A = P D P^{-1} $$
 
