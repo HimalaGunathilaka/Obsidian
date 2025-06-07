@@ -192,3 +192,14 @@ That is, the **total indegree** and the **total outdegree** of the graph both eq
 
 >[!theorem]
 >Let G be a **connected simple or multi-graph**. Then, G is an Euler graph if and only if every vertex of G has an even degree.
+
+>[!tip] Hamiltonian Graph
+>Let G be a simple or multi-graph. A ==cycle in G== is said to be a **Hamiltonian cycle** if it ==includes every vertex of G.== 
+>The graph G is called **Hamiltonian graph** if it has a Hamiltonian cycle.
+
+>[!dirac's theorem]
+>Suppose $G$ is a **simple graph** with $n$ vertices, where $n \geq 3$.  
+If for each $v \in V(G)$, $\deg(v) \geq \frac{n}{2}$ then $G$ is **Hamiltonian**.
+
+>[!ore's theorem]
+>
