@@ -202,4 +202,29 @@ That is, the **total indegree** and the **total outdegree** of the graph both eq
 If for each $v \in V(G)$, $\deg(v) \geq \frac{n}{2}$ then $G$ is **Hamiltonian**.
 
 >[!ore's theorem]
->
+>Suppose G is a simple graph with n vertices where $n \ge 3$. If for each pair of non-adjacent $u,v \in V(G), deg(v) + deg(u) \ge n$ then G is hamiltonian.
+
+---
+## Weighted graphs
+Weighted graph may be denoted as G = (V, E, w). (w is the function that assigns weights to edges.)
+
+---
+## Planar graphs
+- A planar graph is a graph that can be drawn on a plane without any of its edges crossing.
+- Any planar graph at least has one planar representation.
+
+>[!euler's formulae (On geometry)]
+>Suppose $G = (V, E)$ is a **connected planar** simple or multi-graph with $|V| = v$ and $|E| = e$, and $G$ is drawn in a planar representation. If there are $f$ regions (faces) in the drawing — including the **outer face** — then:
+>$$v - e + f = 2$$
+
+- Every planar representation of a planar graph G has the same number of regions.
+>[!faq] Note
+>$K_5 , K_{3,3}$ are the smallest non-planar graphs.
+
+
+>[!Kurotowski's Theorem]
+>A graph is non-planar $\iff$ it contains a subgraph homeomorphic to either $K_5$ or $K_{3,3}$.
+
+---
+# Graph coloring
+
