@@ -67,5 +67,40 @@ $G \cong G^C$. (This simbol is not closely equal. It saying the graphs are simil
 
 >[!tip] Bipartite graph
 >Is a simple graph where the vertices can be divided into two disjoint sets $V_1$ and $V_2$ such that all edges connect a vertex in one set to a vertex in other set. There are no edges between vertices in the set itself $V_1, V_2$
+>- **Complete bipartite graph** is a bipartite graph in which every vertex in $V_1$ is joined to every vertex in $V_2$. 
+>- The complete bipartite graph on bipartition sets m and n vertices is denoted as $K_{m,n}$
 
+---
+# Representation of graphs and graph isomorphism
 
+- **Adjacency matrix** is suitable for dense graph
+>[!tip] Adjacency matrix
+>Let $G$ be a graph (simple or multi) with $n$ vertices (say $V(G) = \{v_1, \cdots, v_n\}$). Then the adjacency matrix $A(G)$ of $G$ is an $n \times n$ matrix and $$A(G) = (a_{ij})$$
+where $a_{ij}$ is the number of edges between $v_i$ and $v_j$ for each $i, j \in \{1, \cdots, n\}$.
+
+- If the adjacency matrix is not symmetric, it means that the edges are directed edges.
+- The incidence matrix representation is particularly useful when dealing with sparse graphs with relatively few edges and when analyzing edge connectivity.
+>[!tip] Incidence matrix
+>Let $G$ be an undirected simple graph or a multi-graph with $n$ vertices,  
+$V(G) = \{v_1, \cdots, v_n\}$, and $m$ edges, $E(G) = \{e_1, \cdots, e_m\}$.  
+Then the incidence matrix $I(G)$ of $G$ is an $n \times m$ matrix and $$I(G) = (a_{ij}) \quad \text{where}$$$$a_{ij} =\begin{cases}1 & \text{if } v_i \text{ is adjacent to a distinct vertex by } e_j \\[6pt] 2 & \text{if } e_j \text{ is a loop at } v_i \\[6pt] 0 & \text{otherwise}
+\end{cases} $$
+> - The matrix basically has Edge as a column and vertex as a row. You have record if a certain vertex has a certain edge and the relationship as above.
+
+>[!tip] Digraph - (The same old Directed graph)
+>Its an ordered pair G = (V,E) where V is the  set of all vertices of G and E is a set of ordered pairs of vertices, called arcs, directed edges, arrows, or lines.
+>Let $G$ be a simple digraph or a multi-digraph with $n$ vertices,  
+$V(G) = \{v_1, \cdots, v_n\}$, and $m$ edges, $E(G) = \{e_1, \cdots, e_m\}$.  
+Then the incidence matrix $I(G)$ of $G$ is an $n \times m$ matrix and  $$
+I(G) = (a_{ij}) \quad \text{where}$$$$a_{ij} = 
+\begin{cases}1 & \text{if } v_i \text{ is the tail of } e_j \\[6pt]
+-1 & \text{if } v_i \text{ is the head of } e_j \\[6pt]2 & \text{if } e_j \text{ is a loop at } v_i \\[6pt]0 & \text{otherwise}
+\end{cases}$$
+> - $v_i$ is the **tail** of $e_j$ means $v_i$ is the **terminal vertex** of $e_j$, while $v_i$ is the **head** of $e_j$ means $v_i$ is the **initial vertex** of $e_j$.
+
+## Graph isomorphism
+- $G_1 = (V_1,E_1),G_2 = (V_2,E_2)$ are isomorphic if,
+	1. $\exists$ a bijection $f: v_1 \rightarrow v_2$
+	2. For each $u,v \in V_1$
+			$(u,v) \in E_1 \iff (f(u),f(v)) \in E_2$
+- Then we say $G_1 \cong G_2$
