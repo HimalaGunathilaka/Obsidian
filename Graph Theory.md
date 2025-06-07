@@ -137,3 +137,58 @@ Let G be a simple or multi-graph.
 >[!tip] Connected graph
 >Let G be a simple or multi graph, it is a connected graph if each pair of vertices can be connected by a path in G. Otherwise, it is called disconnected graph.
 
+>[!note] Theorem
+>A simple or multi-graph G is disconnected if and only if its vertex set V(G) can be partitioned into two non-empty subsets $V_1$ and $V_2$ sot that there is no edge whose end is in $V_1$ and the other end is in $V_2$.
+
+>[!Theorem]
+>Let G be a connected simple or multigraph with n vertices. Then, any two vertices of G are joined by a path of length at most n-1.
+
+>[!theorem]
+>Let G be a simple or multi-graph with n vertices (say V(G) = {$v_1,v_2,...,v_n$}) **A** be its adjacency matrix, and **m** be a positive integer. If $A^{m} = (c_{ij})$ then there are $c_{ij}$ distinct walks from $v_i$ to $v_j$ of length m.
+
+>[!tip] Connected component
+>Let G be a simple or multi-graph, and let H be a sub-graph of G. Then, H is called a **connected component** of G if every pair of vertices in H is connected by a path, and these vertices are not connected to the other vertices of G.
+>- If G is connected, then G is considered a connected component of itself, and it has only one connected component.
+
+---
+>[!tip] Distance  
+>Let $u, v \in V(G)$, where $G$ is a simple or multi-graph.  
+>The **distance** between $u$ and $v$, denoted by $\operatorname{dist}(u, v)$, is the **number of edges in the shortest path** between $u$ and $v$.  
+>If $u$ and $v$ belong to **different connected components**, then the distance is defined as **infinity**: $\operatorname{dist}(u, v) = \infty$
+>- **Non-negativity**: For each $u, v \in V(G)$,  
+  $\operatorname{dist}(u, v) \geq 0$, and  
+  $\operatorname{dist}(u, v) = 0$ if and only if $u = v$.
+  >- **Symmetry**: For each $u, v \in V(G)$,  $\operatorname{dist}(u, v) = \operatorname{dist}(v, u)$. (Is **only valid in undirected graphs**.)
+  >- **Triangle Inequality**: For all $u, v, w \in V(G)$,  $$
+  \operatorname{dist}(u, w) \leq \operatorname{dist}(u, v) + \operatorname{dist}(v, w)
+  $$
+
+>[!tip] Diameter
+>==Maximum distance between any two vertices== of G and it is denoted by diam(G).
+>$$\operatorname{diam}(G) = \max\{\operatorname{dist}(u, v) : u, v \in V(G)\}$$
+
+---
+# Types of Graphs
+- In digraphs (general in any graph but makes more sense in digraph),
+	- Number of edges **incident into** a vertex is called **in-degree**.
+	- Number of edges **incident out of** a vertex is called **Out-degree**.
+$$ deg(v) = indeg(v) + outdeg(v)$$
+
+### The Handshaking Lemma (for Directed Graphs)
+
+Let $G$ be a **simple or multi-digraph** with $n$ vertices  
+(i.e., $V(G) = \{v_1, v_2, \dots, v_n\}$) and $m$ directed edges. Then:
+
+$$
+\sum_{i=1}^n \operatorname{indeg}(v_i) = \sum_{i=1}^n \operatorname{outdeg}(v_i) = m , \text{Number of edges}
+$$
+
+That is, the **total indegree** and the **total outdegree** of the graph both equal the total number of edges.
+
+>[!tip] Euler graphs
+>Let G be a connected simple or multi-graph.
+>- If a ==closed walk in G, running through each and every edge of G exactly once==(**circuit**), then the walk is called an **Euler circuit** and the graph G is called **Euler graph** or **Eulerian graph**.
+>- An **Eulerian path** is a walk in the graph that covers every edge once but does not necessarily return to the starting vertex.
+
+>[!theorem]
+>Let G be a **connected simple or multi-graph**. Then, G is an Euler graph if and only if every vertex of G has an even degree.
