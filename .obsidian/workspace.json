@@ -167,8 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,10 +184,10 @@
   },
   "active": "9b39816c83ed4702",
   "lastOpenFiles": [
+    "Graph Theory.md",
     "Pasted image 20250607131241.png",
     "Graph Theory",
     "Abstract Algebraic Structures.md",
-    "Graph Theory.md",
     "Linear Algebra/Short note - (Linear algebra).md",
     "Topics of interest.md",
     "Excalidraw/Drawing 2025-06-04 12.11.30.excalidraw.md",
@@ -216,7 +215,6 @@
     "Vault/Pasted image 20250601161731.png",
     "Vault/Pasted image 20250601161720.png",
     "Vault/Pasted image 20250601161709.png",
-    "Vault/Pasted image 20250601161659.png",
     "Embeded networking/🧪 MQTT with ESP32 – Lab Project.md",
     "SE/DevOps and Code Management.md",
     "SE/Week 10.md",
