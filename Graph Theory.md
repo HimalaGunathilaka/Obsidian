@@ -97,6 +97,9 @@ I(G) = (a_{ij}) \quad \text{where}$$$$a_{ij} =
 -1 & \text{if } v_i \text{ is the head of } e_j \\[6pt]2 & \text{if } e_j \text{ is a loop at } v_i \\[6pt]0 & \text{otherwise}
 \end{cases}$$
 > - $v_i$ is the **tail** of $e_j$ means $v_i$ is the **terminal vertex** of $e_j$, while $v_i$ is the **head** of $e_j$ means $v_i$ is the **initial vertex** of $e_j$.
+![[Pasted image 20250607131241.png]]
+
+- An ordered pair $(u, v)$ represents a directed edge from vertex $u$ to vertex $v$. The order indicates direction: the edge goes **from** $u$ **to** $v$.
 
 ## Graph isomorphism
 - $G_1 = (V_1,E_1),G_2 = (V_2,E_2)$ are isomorphic if,
@@ -104,3 +107,33 @@ I(G) = (a_{ij}) \quad \text{where}$$$$a_{ij} =
 	2. For each $u,v \in V_1$
 			$(u,v) \in E_1 \iff (f(u),f(v)) \in E_2$
 - Then we say $G_1 \cong G_2$
+- It is easy to see that if two graphs G1 and G2 are isomorphic then they have the same number of vertices, the same number of edges, and the same degree sequence.
+
+---
+# Connectedness
+
+Let G be a simple or multi-graph. 
+>[!tip] Walk
+>A **walk** in G is a finite alternating sequence of vertices and edges, which begins and ends with a vertex, so that each edge is incident with the vertices preceding and following it, and ==Any vertex or edge can appear more than once==
+
+>[!tip] Trail
+>A finite alternating sequence of vertices and edges, which begins and ends with a vertex, so that each edge is incident with the vertices preceding and following it, and ==Any edge cannot appear more than once, but vertices can be repeated==
+>- Or you can say walk is a trail where repetition of edges is allowed.
+
+>[!tip] Circuit
+>A trail is called a circuit if its initial and terminal vertices are the same.
+>- A circuit is a closed trail.
+
+>[!tip] Path
+>Its a trail in which ==no vertex appear more than once==.
+>- Basically no edge and vertex repitions.
+
+>[!tip] Cycle
+>A closed path is a cycle.
+>- A graph containing at least one cycle is called a cyclic graph, otherwise acyclic graph.
+>- A simple graph consisting of only a cycle with n vertices is called an n-cycle and it is denoted by $C_n$.
+
+---
+>[!tip] Connected graph
+>Let G be a simple or multi graph, it is a connected graph if each pair of vertices can be connected by a path in G. Otherwise, it is called disconnected graph.
+
